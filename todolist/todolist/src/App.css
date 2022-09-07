@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 
+custom CSS added by me */
+
+/* .color-blue {
+  color: #66FCF1 ;
+
+} */
+
+* {
+  background-color: black;
+  font-family: Candara;
+}
+
+.color-gray {
+  color: #C5C6C7;
+}
+
+.color-dark-blue {
+  color: #45a29e
+}
+
+.todoform {
+  background-color: white;
+  font-size: 1.5em;
+}
+
+.todolabel {
+  font-size: 1.5em;
+  margin-right: 2%;
+}
+
+.todobtn {
+  color: white;
+  border-color: #66FCF1;
+  font-size: 1.5em;
+  margin-left: 2%;
+}
+
+.h1task {
+  color: #66FCF1;
+}
+
+.tasktable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tasktable td, .tasktable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.tasktable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #45a29e;
+  color: white;
+}
+
+.tasktable td {
+  background-color: #C5C6C7;
+}

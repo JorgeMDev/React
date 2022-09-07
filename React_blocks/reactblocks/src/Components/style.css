@@ -1,0 +1,43 @@
+.header {
+    background-color: #6aa84f;
+    width: 100%;
+    vertical-align: auto;
+    height: 100px;
+
+}
+
+.main {
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 80%;
+    background-color: #e06666;
+    
+}
+
+.navigation{
+    background-color: #6fa8dc;
+    margin-top: 2%;
+    width: 20%;
+    height: 300px;
+
+}
+
+.subcontent{
+    background-color: #ffd966;
+    width: 30%;
+    margin-left: 2.5%;
+    height: 200px;
+
+}
+
+.advertisement{
+    background-color: #b4a7d6;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 50px;
+}
+
+.app {
+
+}

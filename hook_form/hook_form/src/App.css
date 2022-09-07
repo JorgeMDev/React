@@ -1,12 +1,12 @@
 .App {
   text-align: center;
-  background-color: #dddddd;
-  height: 100%;
-  padding: 2%;
 }
-
-.d-flex{
+.container {
   display: flex;
+  margin: 5%;
+  gap: 5%;
+  
+  
 }
 
 .App-logo {

@@ -1,29 +1,25 @@
-import React, { Component} from 'react';
+import React, { useState } from 'react';
 
-class PersonCard extends Component{
-    //Declare constructor to ovewrite our initial constructor so that we can initially set the state of object
-    constructor(props){
-        //give us all the functionality of the default constructor that comes with component
-        super(props);
-        this.state = {
-            addage : this.props.age
-        }
 
+const PersonCard = props => {
+    const [addedAge, setAddedAge] = useState(0)
+
+    const handledAge = () => {
+        setAddedAge(addedAge + 1)
     }
-
-    render(){
-        const {firstName, lastName, age, hairColor} = this.props
-        return( //here we write our jsx, inside return
-            <div>
-                <h1>{firstName}, {lastName}</h1>
-                <h5>Age: {this.state.addage}</h5>
-                <h5>Hair Color: {hairColor}</h5>
-                <button onClick={()=>this.setState({addage: this.state.addage + 1})}>Birthday Button for {firstName} {lastName}</button>
-            </div>
-
-
-        );
-    }
+    return (
+     
+                 //here we write our jsx, inside return
+                    <div>
+                        <h1>{props.firstName}, {props.lastName}</h1>
+                        <h5>Age: {props.age + addedAge}</h5>
+                        <h5>Hair Color: {props.hairColor}</h5>
+                        <button onClick={handledAge}>Birthday Button for {props.firstName} {props.lastName}</button>
+                    </div>
+    )
 }
+
+
+
 
 export default PersonCard
